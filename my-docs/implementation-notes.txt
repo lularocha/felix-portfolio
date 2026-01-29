@@ -1,0 +1,72 @@
+Implementation notes
+
+I used Claude Model: Opus 4.5
+
+To check and choose model type: /model in the Terminal
+
+Initial Prompt
+
+- I changed to 6 projects
+- And removed LinkedIn from contact (twitter/x only)
+
+Plan.md
+
+The only thing i changed from the initial plan was to make sure the last step "Step 12. Deployment" would be to send the project folder as a repo to my Github account first (because I will do the Vercel deployment later). Check the plan.md file that I got.
+
+After the initial implementation was done, including the Initial commit and push to Github I got this message:
+
+All done. Here's a summary of what was built and deployed:                                                                                           
+                                                                                                                                                       
+Portfolio site is live at: https://github.com/lularocha/felix-portfolio
+NOTE: Portfolio site is live at: https://github.com/lularocha/felix-portfolio     
+the site is not actually live what is live is its repository on Github
+to make it actually live meaning accessible by anyone we have to deploy the project with vercel                                                                              
+                                                                                                                                                       
+What's included
+                                                                                                                                      
+  ┌──────────┬──────────────────────────────────────────────────────────────────────────┐                                                              
+  │ Section  │                                 Details                                  │                                                              
+  ├──────────┼──────────────────────────────────────────────────────────────────────────┤                                                              
+  │ Header   │ Sticky nav with anchor links + mobile hamburger menu                     │                                                              
+  ├──────────┼──────────────────────────────────────────────────────────────────────────┤                                                              
+  │ Hero     │ Full-viewport with name, tagline, "View My Work" / "Get in Touch" CTAs   │                                                              
+  ├──────────┼──────────────────────────────────────────────────────────────────────────┤                                                              
+  │ Projects │ 3x2 responsive card grid with 6 sample projects from content collections │                                                              
+  ├──────────┼──────────────────────────────────────────────────────────────────────────┤                                                              
+  │ About    │ Two-column layout with avatar placeholder, bio, and skill tags           │                                                              
+  ├──────────┼──────────────────────────────────────────────────────────────────────────┤                                                              
+  │ Contact  │ Twitter/X button + email link                                            │                                                              
+  ├──────────┼──────────────────────────────────────────────────────────────────────────┤                                                              
+  │ Footer   │ Copyright + social icons                                                 │                                                              
+  └──────────┴──────────────────────────────────────────────────────────────────────────┘                                                              
+  
+Tech details                                                                                                                                         
+                                                                                                                                                       
+  - Astro + Tailwind CSS v4 with zero client JS (except mobile menu toggle + scroll observer)                                                          
+  - Dark theme with indigo accent (#818cf8)                                                                                                            
+  - Fade-in-on-scroll animations via CSS + IntersectionObserver                                                                                        
+  - SEO meta tags (Open Graph, Twitter Card, canonical URL, sitemap)                                                                                   
+  - Content collections for type-safe project data (Markdown files)                                                                                    
+  - Build passes cleanly in ~590ms                                                                                                                     
+                                                                                                                                                       
+To preview locally                                                                                                                                   
+                                                                                                                                                       
+  npm run dev 
+
+(Because its using Astro I got a port http://localhost:4321/, you might get a different one)                                                                                                                                         
+                                                                                                                                                       
+The 6 projects are placeholders — you can edit the Markdown files in src/content/projects/ to replace them with your real work. Same for the bio in  
+
+About.astro, Twitter handle in Contact.astro, and the site URL in astro.config.mjs.  
+
+Tips:
+
+Change model to save usage limits, Opus 4.5 consumes more but its best for complex tasks like planning or writing complex code. Sonnet 4.5 is pretty good overall, Haiku 3.5 is good for simple stuff like changing font-size and color on your CSS.
+
+Type /clear to clear context window if you are about to start a new task that is unrelated to the previous task
+
+Claude creates a README.md file in your root directory which explains the project. That's a Best Practice if you're using GitHub. If you make changes to the project structure or if you add features to the project, ask Claude to review your codebase and update the README.md file accordingly
+
+Create a documentation folder with your plan.md file and other reference files if you see fit and keep them up to date (if you make changes ask Claude to update the files)
+
+Refer to the pages Getting Started/Talking to Claude and Reference/Prompts for more tips and best practices.
