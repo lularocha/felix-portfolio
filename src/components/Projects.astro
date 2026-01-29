@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import ProjectCard from "./ProjectCard.astro";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<section id="projects" class="fade-in px-6 py-24">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="mb-16 text-center text-3xl font-bold sm:text-4xl">
+      Recent <span class="text-accent">Work</span>
+    </h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {projects.map((project) => (
+        <ProjectCard
+          title={project.data.title}
+          description={project.data.description}
+          tags={project.data.tags}
+          url={project.data.url}
+          image={project.data.image}
+        />
+      ))}
+    </div>
+  </div>
+</section>
