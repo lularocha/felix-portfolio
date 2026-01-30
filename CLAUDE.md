@@ -8,7 +8,7 @@ Personal portfolio website for **Lula Rocha** — a developer and designer. Buil
 
 **Live Repository:** https://github.com/lularocha/felix-portfolio
 **Owner:** @lularocha
-**Contact:** hello@lularocha.dev | https://x.com/lularocha
+**Contact:** lularocha@protonmail.com | https://x.com/lularocha
 
 ---
 
@@ -284,7 +284,7 @@ Located in `src/layouts/BaseLayout.astro`:
 - **Owner:** Lula Rocha
 - **GitHub:** [@lularocha](https://github.com/lularocha)
 - **X/Twitter:** [@lularocha](https://x.com/lularocha)
-- **Email:** hello@lularocha.dev
+- **Email:** lularocha@protonmail.com
 
 ---
 
