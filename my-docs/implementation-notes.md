@@ -79,6 +79,12 @@ npm run dev
 
 ## Customization
 
+### CSS Tweaks
+
+Removed the thin border from project cards to create a cleaner, more minimalist design. Eliminating unnecessary graphic elements reduces visual distractions and keeps the focus on the content itself.
+
+---
+
 The following are placeholders that should be replaced with real content:
 
 - **Projects:** Edit Markdown files in `src/content/projects/`
