@@ -83,6 +83,10 @@ npm run dev
 
 Removed the thin border from project cards to create a cleaner, more minimalist design. Eliminating unnecessary graphic elements reduces visual distractions and keeps the focus on the content itself.
 
+### Text edits
+
+I review and edit all AI-generated text to make it more personal using my way to express myself rather than have the AI write the text for me.
+
 ---
 
 The following are placeholders that should be replaced with real content:
