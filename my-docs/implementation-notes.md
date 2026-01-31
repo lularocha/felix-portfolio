@@ -27,19 +27,7 @@ The only change from the initial plan was for **Step 12. Deployment**:
 
 ---
 
-## Implementation Summary
-
-After initial implementation, including the first commit and push to GitHub, here's what was delivered:
-
-### Repository
-
-**GitHub:** https://github.com/lularocha/felix-portfolio
-
-> **Note:** The repository is live on GitHub, but the site is not yet publicly accessible. To make it live (accessible by anyone), deploy the project with Vercel.
-
----
-
-## What's Included
+## Initial Implementation Summary
 
 | Section  | Details                                                           |
 |----------|-------------------------------------------------------------------|
@@ -65,12 +53,6 @@ After initial implementation, including the first commit and push to GitHub, her
 
 ## Local Development
 
-To preview locally:
-
-```bash
-npm run dev
-```
-
 **Dev server:** http://localhost:4321/ (Astro's default port)
 
 > Note: You might get a different port if 4321 is already in use.
@@ -87,7 +69,7 @@ Removed the thin border from project cards to create a cleaner, more minimalist 
 
 I review and edit all AI-generated text to make it more personal using my way to express myself rather than have the AI write the text for me.
 
----
+### Project content
 
 The following are placeholders that should be replaced with real content:
 
