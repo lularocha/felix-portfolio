@@ -36,13 +36,13 @@ const { title, description, tags, url = "#", image } = Astro.props;
     <h3 class="mb-2 text-2xl sm:text-lg font-semibold text-text-primary sm:group-hover:text-accent transition-colors">
       {title}
     </h3>
-    <p class="mb-3 text-lg leading-relaxed text-text-secondary sm:text-sm">
+    <p class="mb-3 text-lg leading-relaxed text-text-secondary sm:text-sm" style="border-bottom: 1px solid gray; padding-bottom: 0.85rem;">
       {description}
     </p>
-    <div class="flex flex-wrap gap-2">
-      {tags.map((tag) => (
-        <span class="rounded-full bg-accent/10 px-3 py-1 text-base font-medium text-accent sm:text-xs">
-          {tag}
+    <div class="flex flex-wrap gap-0">
+      {tags.map((tag, index) => (
+        <span class="text-base font-medium text-text-secondary sm:text-xs">
+          {tag}{index < tags.length - 1 && ' .\u00A0'}
         </span>
       ))}
     </div>
