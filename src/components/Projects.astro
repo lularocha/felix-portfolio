@@ -9,10 +9,10 @@ const projects = (await getCollection("projects")).sort(
 
 <section id="projects" class="fade-in px-6 py-24">
   <div class="mx-auto max-w-6xl">
-    <h2 class="mb-16 text-left sm:text-center text-3xl font-bold sm:text-4xl">
+    <h2 class="mb-16 text-left text-3xl font-bold sm:text-4xl">
       Recent Work
     </h2>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:-mx-4">
       {projects.map((project) => (
         <ProjectCard
           title={project.data.title}
